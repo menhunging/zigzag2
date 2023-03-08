@@ -852,6 +852,9 @@ input {
   .checkBlock label::after {
     left: 10px;
   }
+  .checkBlock input:checked + label:after {
+    left: 28px;
+  }
   .header {
     padding-left: 10px;
     padding-right: 10px;
