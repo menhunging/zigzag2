@@ -1,0 +1,178 @@
+.formPricewrap {
+  padding: 30px 0;
+  .formPriceHead {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formPriceTitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    margin-right: 8px;
+  }
+
+  .formPricePrice {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    color: #000;
+  }
+
+  .formPrice {
+    margin-top: 39px;
+    .text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000;
+      display: block;
+      text-align: center;
+    }
+
+    .inputList {
+      margin: 18px auto 0;
+      display: flex;
+      max-width: 923px;
+      & > * {
+        margin: 0 4.5px;
+      }
+    }
+
+    .inputWrapper {
+      max-width: 339px;
+      width: 100%;
+      input {
+      }
+    }
+
+    .btnYellow {
+      width: 100%;
+      max-width: 219px;
+    }
+  }
+}
+
+.questions {
+  position: relative;
+  text-align: center;
+  margin-top: 52px;
+
+  .questionsTitle {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    color: #000;
+    display: block;
+  }
+  .questionsLink {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #30a838;
+    border: 1px solid #30a838;
+    @include border-radius(2px);
+    @include transition(opacity 0.3s);
+    text-decoration: none;
+    padding: 8px 33px;
+    margin-top: 18px;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
+
+.sliderWorksWrapper {
+  position: relative;
+}
+
+.sliderWorks {
+  margin-top: 31px;
+  margin-bottom: 31px;
+  .slide {
+    border: 1px solid #e0e0e0;
+  }
+  .slidePicture {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .slideBody {
+    padding: 29px 20px;
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__content {
+      margin-top: 18px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      color: #000;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      .btnYellow {
+        max-width: 217px;
+        width: 100%;
+        padding: 18px 10px;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: none;
+        @include border-radius(5px);
+      }
+    }
+  }
+}
+
+.ratingBlock {
+  display: flex;
+  align-items: center;
+  .ratingText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-right: 10px;
+  }
+  .rating {
+    position: relative;
+    background-image: url("../img/star-gray.png");
+    width: 87px;
+    height: 13px;
+
+    .ratingVal {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0%;
+      background-image: url("../img/star.png");
+    }
+  }
+}

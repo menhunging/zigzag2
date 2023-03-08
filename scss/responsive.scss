@@ -1,0 +1,300 @@
+@media (min-width: 768px) {
+  .menuMobile {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 1520px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menuMobile {
+    .menu {
+      ul {
+        li {
+          & + li {
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .sliderWorksWrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .swiper-button-prev {
+      left: 5px;
+    }
+    .swiper-button-next {
+      right: 5px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .menuMobile {
+    justify-content: flex-end;
+
+    .socialWrap {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer {
+    .socialWrap {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+
+    .menuWrapper {
+      margin-bottom: 50px;
+      .menu {
+        width: 60%;
+        ul {
+          justify-content: space-between;
+          li + li {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .sliderWorks {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .slideBody {
+      .controls {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerWrap {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .menuMobile {
+    padding-left: 60px;
+
+    .menu {
+      width: 100%;
+      ul {
+        justify-content: space-between;
+        li {
+          & + li {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .socialWrap {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+    .social li + li {
+      margin-left: 30px;
+    }
+  }
+
+  .formPricewrap {
+    .formPrice {
+      margin-top: 20px;
+    }
+  }
+
+  .footer {
+    .menuWrapper {
+      .menu {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .menuBurger {
+    display: block;
+    z-index: 10;
+  }
+
+  .menuMobile {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    padding: 20px 15px 15px;
+    z-index: 9;
+    @include box-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+
+    .menu ul {
+      display: block;
+      li {
+        & + li {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .socialWrap {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .formPricewrap {
+    padding: 30px 15px;
+    .formPrice {
+      .inputList {
+        flex-wrap: wrap;
+      }
+
+      .inputWrapper {
+        width: 100%;
+        max-width: 100%;
+
+        & + .inputWrapper {
+          margin-top: 15px;
+        }
+      }
+
+      .btnYellow {
+        width: 100%;
+        padding: 15px 10px;
+        margin: 15px auto 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .headerWrap {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .inputList {
+    margin-top: 20px;
+  }
+
+  .formPricewrap {
+    padding: 15px 0px;
+
+    .formPricePrice {
+      font-size: 26px;
+      line-height: 35px;
+    }
+
+    .formPriceTitle {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .formPrice {
+      .text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .checkBlock {
+    label::before,
+    label::after {
+      left: 10px;
+    }
+  }
+
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer {
+    padding: 30px 10px;
+
+    .menuWrapper {
+      margin-bottom: 30px;
+
+      .menu {
+        width: 100%;
+        flex-wrap: wrap;
+        ul {
+          li {
+            margin-bottom: 10px;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .socialWrap {
+    .social {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        margin-bottom: 10px;
+        & + li {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .copyRight {
+    margin-bottom: 10px;
+  }
+
+  .menuMobile {
+    .socialWrap {
+      li {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .sliderWorks {
+    .slidePicture {
+      img {
+        height: 192px;
+      }
+    }
+  }
+}
